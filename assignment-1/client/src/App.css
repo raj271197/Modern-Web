@@ -1,0 +1,104 @@
+/* Resume App Styles */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  border-bottom: 3px solid #0d6efd;
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #0d6efd 0%, #0056b3 100%);
+}
+
+.contact-info a {
+  transition: opacity 0.3s ease;
+}
+
+.contact-info a:hover {
+  opacity: 0.8;
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Badge Styles */
+.badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* List Styles */
+.list-unstyled li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.list-unstyled li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  header .display-4 {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+    text-align: center !important;
+  }
+}
+
+/* Loading and Error States */
+.loading-container {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #dee2e6 !important;
+  }
+
+  header {
+    background: #0d6efd !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
